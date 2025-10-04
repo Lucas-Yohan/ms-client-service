@@ -1,4 +1,4 @@
-package com.microservicedemo.hr_worker;
+package com.hr_worker.hr_worker;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
