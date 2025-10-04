@@ -13,7 +13,7 @@ public class PaymentService {
     private final WorkerFeignClient workerFeignClient;
 
     public Payment getPayment(Long id, int days) {
-        Worker worker = workerFeignClient.getById(id).getBody();
+        Worker worker = workerFeignClient.getById(id);
         return new Payment(worker.getName(), days, worker.getDailyIncome());
     }
 
