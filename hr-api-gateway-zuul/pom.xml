@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ms-microsservices</groupId>
-	<artifactId>hr-api-gateway-zuul</artifactId>
+	<artifactId>hr-api-gateway</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>hr-api-gateway-zuul</name>
-	<description>Zuul Server</description>
+	<name>hr-api-gateway</name>
+	<description>Spring Cloud Gateway Server</description>
 	<url/>
 	<licenses>
 		<license/>
@@ -45,6 +45,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+
+        <!-- Maven -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-gateway</artifactId>
+        </dependency>
+
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

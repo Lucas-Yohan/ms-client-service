@@ -1,0 +1,19 @@
+Crie as aplicações necessárias para o microsserviço.
+Por exemplo: hr-worker, hr-payroll e -hr-api-gateway, etc.
+
+RestTemplate - é um recurso para conectar uma api a outro. (manual)
+Feign - Forma alternativa de conectar uma api a outra. (declarativo)
+Ribbon - um balanceador de carga sobre as instancias. (manual)
+Eureka server - Ele é um descobridor de instancias.
+Há duas libs: server e client;
+Hystrix - Para tolerância a falhas (deprecated)
+
+
+(Antigo) Utilize o RestTemplate com Ribbon (Ribbon deprecated);
+Novos projetos: use o Feign com LoadBalancer ou Gateway.
+(Antigo) Utilize o Hystrix para tolerância e tratamento de falhas 
+as requisições (Hystrix deprecated)
+Novos projetos: Utilize o Resiliance4J
+
+
+
