@@ -1,0 +1,23 @@
+server:
+  port: 8765
+
+spring:
+  cloud:
+    gateway:
+      routes:
+      server:
+        webflux:
+          discovery:
+            locator:
+              enabled: true
+              lower-case-service-id: true
+    loadbalancer:
+      retry:
+        enabled: true
+  main:
+    web-application-type: reactive
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka

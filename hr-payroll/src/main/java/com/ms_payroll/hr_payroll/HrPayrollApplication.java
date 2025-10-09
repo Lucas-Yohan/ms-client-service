@@ -5,8 +5,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.loadbalancer.annotation.LoadBalancerClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@EnableFeignClients
 @SpringBootApplication
+@EnableFeignClients
 public class HrPayrollApplication {
 
 	public static void main(String[] args) {

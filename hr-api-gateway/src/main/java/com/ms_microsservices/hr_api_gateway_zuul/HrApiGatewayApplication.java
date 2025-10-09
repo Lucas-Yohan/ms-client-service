@@ -2,13 +2,14 @@ package com.ms_microsservices.hr_api_gateway_zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
-@EnableZuulProxy
 @SpringBootApplication
-public class HrApiGatewayZuulApplication {
+@EnableDiscoveryClient
+public class HrApiGatewayApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HrApiGatewayZuulApplication.class, args);
+		SpringApplication.run(HrApiGatewayApplication.class, args);
 	}
 
 }
