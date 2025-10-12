@@ -10,10 +10,8 @@ import java.io.Serial;
 import java.io.Serializable;
 import java.util.Objects;
 
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
+@AllArgsConstructor @NoArgsConstructor
+@Getter @Setter
 @Entity
 @Table(name = "tb_worker")
 public class Worker implements Serializable {
