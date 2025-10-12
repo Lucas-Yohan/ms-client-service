@@ -2,11 +2,13 @@ package com.ms_payroll.hr_payroll.feignClients;
 
 import com.ms_payroll.hr_payroll.entities.Worker;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.stereotype.Component;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.List;
 
+@Component
 @FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 

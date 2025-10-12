@@ -21,7 +21,9 @@ public class UserResource {
     @GetMapping("/{id}")
     public ResponseEntity<User> getUser(@PathVariable Long id) {
         User user = userRepository.findById(id).orElse(null);
-        return ResponseEntity.ok(user);
+        return userRepository.findById(id)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
 
